@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <div id="game-container">
+      <!-- score -->
+      <div id="score">
+       0
+      </div>
+      <!-- character -->
+      <div id="character">
+         <img src="daraj8q-744f0563-d3f2-4a25-98a7-377abba7dc7b.gif" alt="" id="pika"/>
+      </div>
+
+      <!-- obstacle -->
+      <div id="obstacle">
+         <div class="obstacle-img"></div>
+      </div>
+   </div> 
+   <div style="display:none">
+   <audio id="bg-music" controls loop>
+    <source src="8-bit-dream-land-142093.mp3" type="audio/mpeg">
+  </audio>
+  
+  <audio id="gameover-music">
+    <source src="mixkit-axe-hits-to-a-plate-2774.wav" type="audio/mpeg">
+  </audio>
+</div>
+  
+   <script src="script.js"></script>    
+</body>
+</html>

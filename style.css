@@ -1,0 +1,85 @@
+#game-container{
+    height: 60vh;
+    width: 80%;
+    border: 2px solid black;
+    margin: 100px auto;
+    position: relative;
+    padding: 0px;
+}
+
+/* score */
+#score{
+    position: absolute;
+    top: 0px;
+    right: 10vw;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+/* character */
+#character{
+    position: absolute;
+    bottom: 0vh;
+    left: 20vw;
+}
+
+#character img{
+    height: 100px; 
+}
+
+
+/* obstacle */
+#obstacle{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0vh;
+    left: 80vw;
+    animation: move_obstacle 3s infinite;
+}
+
+  
+.obstacle-img {
+   height: 100%;
+   width: 100%;
+   background-color: blue;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.jump-animation{
+    animation: jump 1s infinite;
+}
+
+
+@keyframes jump{
+    0% {
+        bottom: 0vh;
+    }
+    25% {
+        bottom: 15vh;
+        left: 22vw;
+    }
+    50% {
+        bottom: 20vh;
+        left: 26vw;
+    }
+    70% {
+        bottom: 15vh;
+        left: 22vw;
+    }
+    100%{
+       bottom: 0vh;
+       left: 20vw;
+    }
+}
+
+
+@keyframes move_obstacle{
+    0% {
+        left: 80vw;
+    }
+    100%{
+       left: -20vw;
+    }
+}
